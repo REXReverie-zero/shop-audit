@@ -1,0 +1,40 @@
+# Credentials (including nested files and interrupted saves)
+.streamlit/*
+!.streamlit/config.toml
+**/secrets.toml
+**/api_settings.json
+**/.streamlit/*.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Personal/runtime data, budgets, prompts and generated results
+**/data/
+**/image_logs/
+**/seedream_image_logs/
+**/logs/
+**/history/
+**/finals/
+**/evidence/
+**/merge_archive/
+**/api_calls.jsonl
+**/budget*.json
+**/prompt_templates.json
+**/run_log.json
+*.log
+*.tmp
+*.lock
+# Environments and release artifacts
+.venv/
+venv/
+runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+outputs/
+*.zip
+.DS_Store
+Thumbs.db
